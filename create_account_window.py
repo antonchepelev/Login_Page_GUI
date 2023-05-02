@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-from tools_login import ConvertTuple, Criteria, hash_password, congrats
+from tools import ConvertTuple, Criteria, hash_password, congrats
 import string
 import sqlite3
 
