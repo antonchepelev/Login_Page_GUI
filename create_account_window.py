@@ -104,7 +104,7 @@ def create_acc_window():
             meets_criteria.last = True
 
         #checking if username criteria is True
-        if not len(username) > 1:
+        if not len(username) > 1 or len(username) > 9:
             username_label.configure(text = "Try Again",style = "again.TLabel")
             username_box.delete(0,"end")
 
@@ -174,7 +174,9 @@ def create_acc_window():
         style.configure("close.TButton",font =("Ubuntu",15,"bold"),foreground = "#e1090a",background = "white",borderwidth = 1,relief = "groove")
 
         rules_text = tk.Text(help_window,font=("Ubuntu",12,"bold"),height=10,background="white",relief="flat")
-        rules_text.insert(tk.END,"> First and last name may not include numbers   or special characters\n\n> If username is already in use it will ask you       to try again\n\n> Your password must be at least 8 characters    long\n\n")
+        rules_text.insert(tk.END,"> First and last name may not include numbers   or special characters\n\n"+
+                          "> If username is already in use it will ask you       to try again\n\n"+
+                          "> Your password must be at least 8 characters    long and the username can be no longer             than 8 characters\n\n")
         rules_text.configure(state="disabled")
         rules_text.pack(padx=20,pady=20)
         
