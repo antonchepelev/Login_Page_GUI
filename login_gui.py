@@ -5,7 +5,7 @@ import sqlite3
 from create_account_window import create_acc_window
 import bcrypt
 
-#test
+
 
 #main window for login page
 root =tk.Tk()
