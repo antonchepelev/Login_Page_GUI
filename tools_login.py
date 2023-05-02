@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 
+#test
 
 #class for making sure all the criteria is true before adding user info to database
 class Criteria:
